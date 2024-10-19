@@ -44,9 +44,10 @@ $voitures = $req->fetchAll();
                 <td><?=$voiture["nom"]?></td>
                 <td>
                     <a href="http://localhost/projet_complet_blog_poo/admin/posts/edit/" class="btn btn-warning">modifier</a>
-                    <form  class="d-inline" method="POST" action="http://localhost/projet_complet_blog_poo/admin/posts/delete/">
+                    <a href="delete.php?id=<?= $voiture['immatriculation'] ?>" class="btn btn-danger">supprimer</a>
+                    <!-- <form  class="d-inline" method="POST" action="http://localhost/projet_complet_blog_poo/admin/posts/delete/">
                         <button class="btn btn-danger">supprimer</button>
-                    </form>
+                    </form> -->
 
                 </td>
             </tr>
